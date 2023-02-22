@@ -2,7 +2,7 @@ package com.pb.test.service;
 
 import com.pb.test.exception.NoteNotFoundException;
 import com.pb.test.exception.ZeroLikesException;
-import com.pb.test.model.Note;
+import com.pb.test.model.entity.Note;
 import com.pb.test.repository.NoteRepository;
 import lombok.AllArgsConstructor;
 import org.jetbrains.annotations.NotNull;

@@ -1,10 +1,11 @@
 package com.pb.test.controller;
 
-import com.pb.test.model.Note;
+import com.pb.test.model.entity.Note;
 import com.pb.test.service.NoteService;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import springfox.documentation.annotations.ApiIgnore;
 
@@ -62,12 +63,14 @@ public class NoteController {
         noteService.deleteNote(id);
     }
 
+    @PreAuthorize("hasRole('USER')")
     @PutMapping("/{id}/increase_like")
     @ResponseStatus(HttpStatus.OK)
     public Note increaseLikesInNote(@PathVariable("id") String id){
         return noteService.increaseLikesInNote(id);
     }
 
+    @PreAuthorize("hasRole('USER')")
     @PutMapping("/{id}/decrease_like")
     @ResponseStatus(HttpStatus.OK)
     public Note decreaseLikesInNote(@PathVariable("id") String id){

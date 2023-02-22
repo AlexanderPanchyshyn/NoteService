@@ -1,6 +1,6 @@
 package com.pb.test.controller;
 
-import com.pb.test.model.User;
+import com.pb.test.model.entity.User;
 import com.pb.test.service.UserService;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,10 +32,10 @@ public class UserController {
         return userService.getAll();
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/{username}")
     @ResponseStatus(HttpStatus.OK)
-    public User getUserById(@PathVariable("id") String id) {
-        return userService.getUser(id);
+    public User getUserByUsername(@PathVariable("username") String username) {
+        return userService.getUser(username);
     }
 
     @PostMapping()
@@ -44,10 +44,10 @@ public class UserController {
         return userService.saveUser(user);
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/{username}")
     @ResponseStatus(HttpStatus.OK)
-    public User updateUserById(@PathVariable("id") String id, @RequestBody User user){
-        return userService.updateUser(id, user);
+    public User updateUserByUsername(@PathVariable("username") String username, @RequestBody User user){
+        return userService.updateUser(username, user);
     }
 
     @DeleteMapping()

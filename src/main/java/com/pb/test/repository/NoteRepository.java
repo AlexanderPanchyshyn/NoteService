@@ -1,6 +1,6 @@
 package com.pb.test.repository;
 
-import com.pb.test.model.Note;
+import com.pb.test.model.entity.Note;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
