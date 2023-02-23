@@ -31,3 +31,9 @@ f
 6src/test/java/com/pb/test/service/UserServiceTest.java,b\b\bb116047533d0ad8423ad88df070192be6eb0656
 b
 2src/main/java/com/pb/test/service/NoteService.java,9\2\9242c3e843e45667daa76b72d2cc6d24af2137d0
+f
+6src/test/java/com/pb/test/service/NoteServiceTest.java,3\5\3548cc24b34c32eba0389a535f4304b96d2ab47e
+^
+.src/main/java/com/pb/test/TestApplication.java,d\8\d8ee4e7ef7bd6605800c2c6857ced289ea788103
+f
+6src/main/java/com/pb/test/security/SecurityConfig.java,8\f\8f94771afc5d62f117877c8e0c958615b15f6831
