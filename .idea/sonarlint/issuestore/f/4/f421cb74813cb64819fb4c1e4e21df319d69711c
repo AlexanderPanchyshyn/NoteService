@@ -1,0 +1,5 @@
+
+o
+java:S6204J"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ÏîŒÛç0
+P
+java:S1144G"3Remove this unused private "getAuthorities" method.(÷ìì¹8ĞîŒÛç0
